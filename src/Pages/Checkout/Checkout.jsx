@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import Banner from "../../Components/Banner/Banner";
 import bannerImg from "../../assets/images/banner/1.jpg";
 import Form from "./CheckoutElement/Form";
@@ -10,6 +10,9 @@ const Checkout = () => {
   //get loader data
   const checkoutProduct = useLoaderData();
   //console.log(chckoutProduct);
+
+  //navigate
+  const navigate = useNavigate()
 
   //get user by context
   const { user } = useContext(AuthContext);
@@ -53,7 +56,7 @@ const Checkout = () => {
       }
     })
 
-  
+    navigate('/')
     
   };
 

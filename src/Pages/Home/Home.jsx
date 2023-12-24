@@ -3,6 +3,7 @@ import Carousel from "./HomeElement/Carousel/Carousel";
 import AboutUs from "./HomeElement/AboutUs/AboutUs";
 import Address from "../../Components/Address/Address";
 import Card from "../../Components/Card/Card";
+import Testimonial from "./HomeElement/Testimonial/Testimonial";
 
 const Home = () => {
   //state for services
@@ -44,6 +45,20 @@ const Home = () => {
 
       <div className="">
         <Address></Address>
+      </div>
+
+      <div className="space-y-2">
+        <p className="font-bold text-lg text-center text-[#FF3811] ">
+          Testimonial
+        </p>
+        <h1 className="text-4xl font-bold text-center leading-tight">
+          What Customer Says
+        </h1>
+        <p className="py-2 lg:w-1/2 mx-auto text-center text-gray-500">
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+        <Testimonial></Testimonial>
       </div>
     </div>
   );

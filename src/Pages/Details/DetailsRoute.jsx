@@ -9,7 +9,8 @@ const DetailsRoute = () => {
 
   return (
     <div>
-      <Banner image={bannerImg} text={"Service Details"}></Banner>
+      <Banner image={bannerImg} text={"Service Details"}
+      serviceName={signgleService.title}></Banner>
 
       <Details
         id={signgleService._id}
